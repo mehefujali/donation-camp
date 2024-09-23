@@ -1,4 +1,7 @@
-
+const modal = document.getElementById('modal')
+document.getElementById('close-modal').addEventListener('click', function () {
+      modal.classList.add('hidden')
+})
 document.getElementById('donate-1-btn').addEventListener('click', function (event) {
       const totalWantedFund = document.getElementById('total-w-fund')
       const totalWantedFundValue = parseFloat(totalWantedFund.innerText)
@@ -15,7 +18,8 @@ document.getElementById('donate-1-btn').addEventListener('click', function (even
 
       const newTotalWantedFund = totalWantedFundValue - donateInput
       totalWantedFund.innerText = newTotalWantedFund
-      alert('donate sucsess')
+
+      modal.classList.remove('hidden')
 
 
 
@@ -36,7 +40,7 @@ document.getElementById('donate-2-btn').addEventListener('click', function (even
       totalWantedFund.innerText = newTotalWantedFund
 
 
-      alert('donate sucsess')
+      modal.classList.remove('hidden')
 
 })
 document.getElementById('donate-3-btn').addEventListener('click', function (event) {
@@ -54,7 +58,7 @@ document.getElementById('donate-3-btn').addEventListener('click', function (even
       const newTotalWantedFund = totalWantedFundValue - donateInput
       totalWantedFund.innerText = newTotalWantedFund
 
-      alert('donate sucsess')
+      modal.classList.remove('hidden')
 
 
 })
