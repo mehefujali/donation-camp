@@ -1,14 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Document</title>
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+            tailwind.config = {
+                  theme: {
+                        extend: {
+                              colors: {
+                                    'primary-color': '#B4F461'
+                              }
+                        }
+                  }
+            }
+      </script>
+
 </head>
 
 <body>
 
+      <!-- header section  -->
+      <header>
+            <!-- nav bar  -->
+            <nav class=" bg-red-50  py-4 ">
+                  <div class="navbar  container mx-auto ">
+                        <div class="navbar-start">
+
+
+                              <a class="btn btn-ghost text-xl bg-primary-color">Blog</a>
+                        </div>
+                        <div class="navbar-center  gap-4">
+                              <img class=" w-7 sm:w-10" src="./assets/logo.png" alt="">
+                              <h3 class=" font-bold text-sm sm:text-2xl">Donate Bangladesh</h3>
+                        </div>
+                        <div class="navbar-end">
+                              <div class="flex gap-2 items-center">
+                                    <img src="./assets/coin.png" alt="">
+                                    <h1 class=" font-semibold text-xl">00000</h1>
+                              </div>
+                        </div>
+                  </div>
+            </nav>
+
+            <div class=" container mx-auto">
+                  <div class=" flex items-center justify-center gap-4 mt-7">
+                        <button class="btn btn-ghost text-xl bg-primary-color">Donation</button><button
+                              class="btn btn-ghost text-xl ">History</button>
+                  </div>
+            </div>
+      </header>
+      <!-- main section  -->
+      <main>
+            <!-- donation part  -->
+
+      </main>
+      <!-- footer section  -->
+      <footer>
+
+      </footer>
 </body>
 
 </html>
