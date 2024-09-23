@@ -48,15 +48,15 @@
 
             <div class=" container mx-auto">
                   <div class=" flex items-center justify-center gap-4 mt-7">
-                        <button class="btn btn-ghost text-xl bg-primary-color">Donation</button><button
-                              class="btn btn-ghost text-xl ">History</button>
+                        <button class="btn btn-ghost text-xl bg-primary-color " id="donate-btn">Donation</button><button
+                              class="btn btn-ghost text-xl " id="history-btn">History</button>
                   </div>
             </div>
       </header>
       <!-- main section  -->
       <main class=" container mx-auto">
             <!-- donation part  -->
-            <section class=" w-full sm:w-10/12 mx-auto  mt-8">
+            <section class=" w-full sm:w-10/12 mx-auto  mt-8" id="donation-part">
                   <!-- cards  -->
                   <div class=" mb-8 flex flex-col lg:flex-row items-center gap-12 border-2 border-gray-200 p-3 md:p-8 rounded-xl  donetion-card  "
                         id="donetion-card-1">
@@ -68,7 +68,7 @@
                         <div class=" md:w-4/5 flex flex-col justify-between ">
                               <div class=" flex bg-red-100 px-4 py-1 w-fit items-center font-semibold gap-2 rounded">
                                     <img src="./assets/coin.png" alt="">
-                                    <h3 id="donate-fund-1">120 BDT</h3>
+                                    <h3><span id="donate-fund-1">120</span> BDT</h3>
                               </div>
                               <h3 class=" text-2xl font-bold my-6">Donate for Flood at Noakhali, Bangladesh</h3>
                               <p>
@@ -95,7 +95,7 @@
                         <div class=" md:w-4/5 flex flex-col justify-between ">
                               <div class=" flex bg-red-100 px-4 py-1 w-fit items-center font-semibold gap-2 rounded">
                                     <img src="./assets/coin.png" alt="">
-                                    <h3 id="donate-fund-2">400 BDT</h3>
+                                    <h3><span id="donate-fund-2">400</span> BDT</h3>
                               </div>
                               <h3 class=" text-2xl font-bold my-6">Donate for Flood Relief in Feni,Bangladesh</h3>
                               <p>
@@ -122,7 +122,7 @@
                         <div class=" md:w-4/5 flex flex-col  h-full justify-between ">
                               <div class=" flex bg-red-100 px-4 py-1 w-fit items-center font-semibold gap-2 rounded">
                                     <img src="./assets/coin.png" alt="">
-                                    <h3 id="donate-fund-3">560 BDT</h3>
+                                    <h3><span id="donate-fund-3">560</span> BDT</h3>
                               </div>
                               <h3 class=" text-2xl font-bold my-6">Aid for Injured in the Quota Movement</h3>
                               <p>
@@ -141,6 +141,12 @@
                   </div>
 
             </section>
+            <!-- History  -->
+            <section>
+                  <div class=" border border-gray-300">
+
+                  </div>
+            </section>
       </main>
       <!-- footer section  -->
       <footer>
@@ -150,6 +156,7 @@
       <!-- scripts  -->
       <script src="./utility.js"></script>
       <script src="./scripts.js"></script>
+      <script src="./fitures.js"></script>
 </body>
 
 </html>
