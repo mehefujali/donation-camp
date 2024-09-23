@@ -10,7 +10,7 @@ document.getElementById('donate-1-btn').addEventListener('click', function (even
 
 
       if (donateInput < 0 || typeof (donateInput) !== "number" || isNaN(donateInput) === true) {
-            alert('invalid')
+            alert('Invalid Input')
             return
       }
       const newDonateFund = donateFund + donateInput
@@ -18,11 +18,12 @@ document.getElementById('donate-1-btn').addEventListener('click', function (even
 
       const newTotalWantedFund = totalWantedFundValue - donateInput
       totalWantedFund.innerText = newTotalWantedFund
+      const title = document.getElementById('title-1').innerText
+
+      const date = new Date();
+      addToHistory(title, donateInput, date)
 
       modal.classList.remove('hidden')
-
-
-
 })
 document.getElementById('donate-2-btn').addEventListener('click', function (event) {
       const totalWantedFund = document.getElementById('total-w-fund')
@@ -30,7 +31,7 @@ document.getElementById('donate-2-btn').addEventListener('click', function (even
       const donateInput = getInputValueById('donate-2-input')
       const donateFund = parseFloat(getInerTextValueById('donate-fund-2').innerText)
       if (donateInput < 0 || typeof (donateInput) !== "number" || isNaN(donateInput) === true) {
-            alert('invalid')
+            alert('Invalid Input')
             return
       }
       const newDonateFund = donateFund + donateInput
@@ -38,7 +39,10 @@ document.getElementById('donate-2-btn').addEventListener('click', function (even
       console.log(newDonateFund);
       const newTotalWantedFund = totalWantedFundValue - donateInput
       totalWantedFund.innerText = newTotalWantedFund
+      const title = document.getElementById('title-2').innerText
 
+      const date = new Date();
+      addToHistory(title, donateInput, date)
 
       modal.classList.remove('hidden')
 
@@ -49,7 +53,7 @@ document.getElementById('donate-3-btn').addEventListener('click', function (even
       const donateInput = getInputValueById('donate-3-input')
       const donateFund = parseFloat(getInerTextValueById('donate-fund-3').innerText)
       if (donateInput < 0 || typeof (donateInput) !== "number" || isNaN(donateInput) === true) {
-            alert('invalid')
+            alert('Invalid Input')
             return
       }
       const newDonateFund = donateFund + donateInput
@@ -57,7 +61,10 @@ document.getElementById('donate-3-btn').addEventListener('click', function (even
       console.log(newDonateFund);
       const newTotalWantedFund = totalWantedFundValue - donateInput
       totalWantedFund.innerText = newTotalWantedFund
+      const title = document.getElementById('title-3').innerText
 
+      const date = new Date();
+      addToHistory(title, donateInput, date)
       modal.classList.remove('hidden')
 
 
