@@ -40,7 +40,7 @@
                         <div class="navbar-end">
                               <div class="flex gap-2 items-center">
                                     <img src="./assets/coin.png" alt="">
-                                    <h1 class=" font-semibold text-xl">00000</h1>
+                                    <h1 class=" font-semibold text-xl" id="total-w-fund">5500</h1>
                               </div>
                         </div>
                   </div>
@@ -58,8 +58,8 @@
             <!-- donation part  -->
             <section class=" w-full sm:w-10/12 mx-auto  mt-8">
                   <!-- cards  -->
-                  <div
-                        class=" flex flex-col lg:flex-row items-center gap-12 border-2 border-gray-200 p-3 md:p-8 rounded-xl  ">
+                  <div class=" mb-8 flex flex-col lg:flex-row items-center gap-12 border-2 border-gray-200 p-3 md:p-8 rounded-xl  donetion-card  "
+                        id="donetion-card-1">
                         <!-- img part  -->
                         <div class="  md:w-9/12">
                               <img class="w-full" src="./assets/noakhali.png" alt="">
@@ -68,7 +68,7 @@
                         <div class=" md:w-4/5 flex flex-col justify-between ">
                               <div class=" flex bg-red-100 px-4 py-1 w-fit items-center font-semibold gap-2 rounded">
                                     <img src="./assets/coin.png" alt="">
-                                    <h3>0 BDT</h3>
+                                    <h3 id="donate-fund-1">120 BDT</h3>
                               </div>
                               <h3 class=" text-2xl font-bold my-6">Donate for Flood at Noakhali, Bangladesh</h3>
                               <p>
@@ -78,14 +78,15 @@
                                     donation can make a huge difference. Join us in supporting the people of Noakhali
                                     during this difficult time. Together, we can restore hope and rebuild stronger
                                     communities.</p>
-                              <input class=" text-xl  input border-gray-200 mt-6 w-full" type="text" name="" id=""
-                                    placeholder="Write Donation Amount">
-                              <button class=" w-full btn btn-ghost bg-primary-color text-xl  mt-6">Donate
+                              <input class=" text-xl  input border-gray-200 mt-6 w-full" type="text" name=""
+                                    id="donate-1-input" placeholder="Write Donation Amount">
+                              <button class=" w-full btn btn-ghost bg-primary-color text-xl  mt-6"
+                                    id="donate-1-btn">Donate
                                     Now</button>
                         </div>
                   </div>
                   <div
-                        class=" flex flex-col lg:flex-row items-center gap-12 border-2 border-gray-200 p-3 md:p-8 rounded-xl  ">
+                        class=" mb-8 flex flex-col lg:flex-row items-center gap-12 border-2 border-gray-200 p-3 md:p-8 rounded-xl  donetion-card ">
                         <!-- img part  -->
                         <div class="  md:w-9/12">
                               <img class="w-full" src="./assets/feni.png" alt="">
@@ -94,24 +95,25 @@
                         <div class=" md:w-4/5 flex flex-col justify-between ">
                               <div class=" flex bg-red-100 px-4 py-1 w-fit items-center font-semibold gap-2 rounded">
                                     <img src="./assets/coin.png" alt="">
-                                    <h3>0 BDT</h3>
+                                    <h3 id="donate-fund-2">400 BDT</h3>
                               </div>
                               <h3 class=" text-2xl font-bold my-6">Donate for Flood Relief in Feni,Bangladesh</h3>
                               <p>
-                                    Your help can bring hope to those affected by the devastating floods in Noakhali.
-                                    Thousands of families are in need of shelter, food, and medical assistance. Your
-                                    contribution can provide essential relief and rebuild shattered lives. Even a small
-                                    donation can make a huge difference. Join us in supporting the people of Noakhali
-                                    during this difficult time. Together, we can restore hope and rebuild stronger
-                                    communities.</p>
-                              <input class=" text-xl  input border-gray-200 mt-6 w-full" type="text" name="" id=""
-                                    placeholder="Write Donation Amount">
-                              <button class=" w-full btn btn-ghost bg-primary-color text-xl  mt-6">Donate
+                                    The people of Feni are facing the devastating impacts of severe flooding. Homes have
+                                    been destroyed, and families are in urgent need of food, clean water, and medical
+                                    supplies. Your donation can help provide critical relief and support recovery
+                                    efforts. No contribution is too small to make a difference. Stand with the people of
+                                    Feni in their time of need and help restore hope to the affected communities.
+                                    Together, we can rebuild stronger.</p>
+                              <input class=" text-xl  input border-gray-200 mt-6 w-full" type="text" name=""
+                                    placeholder="Write Donation Amount" id="donate-2-input">
+                              <button class=" w-full btn btn-ghost bg-primary-color text-xl  mt-6 "
+                                    id="donate-2-btn">Donate
                                     Now</button>
                         </div>
                   </div>
                   <div
-                        class=" flex flex-col lg:flex-row items-center gap-12 border-2 border-gray-200 p-3 md:p-8 rounded-xl  ">
+                        class=" flex flex-col lg:flex-row items-center gap-12 border-2 border-gray-200 p-3 md:p-8 rounded-xl donetion-card ">
                         <!-- img part  -->
                         <div class="  md:w-11/12">
                               <img class="w-full" src="./assets/quota-protest.png" alt="">
@@ -120,19 +122,20 @@
                         <div class=" md:w-4/5 flex flex-col  h-full justify-between ">
                               <div class=" flex bg-red-100 px-4 py-1 w-fit items-center font-semibold gap-2 rounded">
                                     <img src="./assets/coin.png" alt="">
-                                    <h3>0 BDT</h3>
+                                    <h3 id="donate-fund-3">560 BDT</h3>
                               </div>
                               <h3 class=" text-2xl font-bold my-6">Aid for Injured in the Quota Movement</h3>
                               <p>
-                                    Your help can bring hope to those affected by the devastating floods in Noakhali.
-                                    Thousands of families are in need of shelter, food, and medical assistance. Your
-                                    contribution can provide essential relief and rebuild shattered lives. Even a small
-                                    donation can make a huge difference. Join us in supporting the people of Noakhali
-                                    during this difficult time. Together, we can restore hope and rebuild stronger
-                                    communities.</p>
-                              <input class=" text-xl  input border-gray-200 mt-6 w-full" type="text" name="" id=""
-                                    placeholder="Write Donation Amount">
-                              <button class=" w-full btn btn-ghost bg-primary-color text-xl  mt-6">Donate
+                                    Many brave individuals have been injured while standing up for justice in the Quota
+                                    Movement. These individuals need urgent medical care, support, and rehabilitation to
+                                    recover. Your generous donation can help cover hospital expenses, medicine, and
+                                    long-term treatment for the injured. Stand with them in their fight for fairness by
+                                    providing the assistance they desperately need. Together, we can support those who
+                                    have sacrificed for a better future.</p>
+                              <input class=" text-xl   input border-gray-200 mt-6 w-full" type="text"
+                                    id="donate-3-input" name="" placeholder="Write Donation Amount">
+                              <button class=" w-full btn btn-ghost bg-primary-color text-xl  mt-6 "
+                                    id="donate-3-btn">Donate
                                     Now</button>
                         </div>
                   </div>
@@ -143,6 +146,10 @@
       <footer>
 
       </footer>
+
+      <!-- scripts  -->
+      <script src="./utility.js"></script>
+      <script src="./scripts.js"></script>
 </body>
 
 </html>
