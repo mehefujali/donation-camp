@@ -25,7 +25,7 @@ document.getElementById('donate-1-btn').addEventListener('click', function (even
       const date = new Date();
       addToHistory(title, donateInput, date)
       // modal.classList.remove('hidden')
-      my_modal_5.showModal()
+      my_modal_1.showModal()
       document.getElementById('donate-1-input').value = ''
 })
 document.getElementById('donate-2-btn').addEventListener('click', function (event) {
