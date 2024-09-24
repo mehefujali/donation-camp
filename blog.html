@@ -22,17 +22,81 @@
 </head>
 
 <body>
+      <header class=" sticky top-0 backdrop-blur-xl pb-4">
+            <!-- nav bar  -->
+            <nav class=" bg-primary-color bg-opacity-20  py-4 ">
+                  <div class="navbar  container mx-auto ">
+                        <div class="navbar-start">
+
+
+                              <a class="btn btn-ghost text-xl bg-primary-color" href="./index.html">Home</a>
+                        </div>
+                        <div class="navbar-center  gap-4">
+                              <img class=" w-7 sm:w-10" src="./assets/logo.png" alt="">
+                              <h3 class=" font-bold text-sm sm:text-2xl">Donate Bangladesh</h3>
+                        </div>
+                        <div class="navbar-end">
+                              <div class="flex gap-2 items-center">
+                                    <img src="./assets/coin.png" alt="">
+                                    <h1 class=" font-semibold text-xl" id="total-w-fund">55000</h1>
+                              </div>
+                        </div>
+                  </div>
+            </nav>
+      </header>
       <main>
             <section class=" container mx-auto mt-6">
                   <h1 class=" text-3xl font-bold">Important FAQ <span class=" text-6xl "><i
                                     class="fa-solid fa-question fa-bounce"></i></span></i></h1>
 
-                  <div class=" mt-6">
+                  <div class=" mt-6 flex flex-col gap-4">
                         <div class="collapse bg-base-200">
                               <input type="checkbox" />
-                              <div class="collapse-title text-xl font-medium">What is DOM</div>
+                              <div class="collapse-title text-xl font-semibold">What is document object model (DOM)?
+                              </div>
                               <div class="collapse-content">
-                                    <p>hello</p>
+                                    <p>The Document Object Model (DOM) is a programming interface that represents the
+                                          structure of a web page as a hierarchical tree of objects. It allows
+                                          developers to manipulate the content, structure, and style of a webpage using
+                                          JavaScript.</p>
+                              </div>
+                        </div>
+                        <div class="collapse bg-base-200">
+                              <input type="checkbox" />
+                              <div class="collapse-title text-xl font-semibold">How do you slect an element form DOM?
+                              </div>
+                              <div class="collapse-content">
+                                    <p>To select an element from the DOM, you can use methods like <span
+                                                class=" bg-primary-color bg-opacity-30 text-red-600 px-5">getElementById()
+                                          </span> to
+                                          select by ID, <span
+                                                class=" bg-primary-color bg-opacity-30 text-red-600 px-5">getElementsByClassName()
+                                          </span>to select by class, or
+                                          <span class=" bg-primary-color bg-opacity-30 text-red-600 px-5">querySelector()
+                                          </span> to select elements using CSS selectors. For example,
+                                          <span class=" bg-primary-color bg-opacity-30 text-red-600 px-5">document.getElementById("elementId")
+                                          </span>
+                                          selects an element with a specific ID.
+                                          <span class=" bg-primary-color bg-opacity-30 text-red-600 px-5">querySelector(".className")
+                                          </span>
+
+                                          selects the first element matching the class
+                                          name.
+                                    </p>
+                              </div>
+                        </div>
+                        <div class="collapse bg-base-200">
+                              <input type="checkbox" />
+                              <div class="collapse-title text-xl font-semibold">is event dele ation in the context of
+                                    the DOM, and why is it useful?
+                              </div>
+                              <div class="collapse-content">
+                                    <p>Event delegation in the DOM is a technique where a single event listener is
+                                          attached to a parent element instead of multiple listeners on child elements.
+                                          This works because events "bubble up" from child elements to their parent,
+                                          allowing the parent to catch events from its children. It's useful because it
+                                          improves performance by reducing the number of event listeners, and it also
+                                          works for dynamically added elements.</p>
                               </div>
                         </div>
                   </div>
