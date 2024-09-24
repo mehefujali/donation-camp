@@ -51,7 +51,7 @@ document.getElementById('donate-2-btn').addEventListener('click', function (even
 
       const date = new Date();
       addToHistory(title, donateInput, date)
-      my_modal_5.showModal()
+      my_modal_1.showModal()
       // modal.classList.remove('hidden')
       document.getElementById('donate-2-input').value = ''
 })
@@ -77,7 +77,7 @@ document.getElementById('donate-3-btn').addEventListener('click', function (even
 
       const date = new Date();
       addToHistory(title, donateInput, date)
-      my_modal_5.showModal()
+      my_modal_1.showModal()
       // modal.classList.remove('hidden')
       document.getElementById('donate-3-input').value = ''
 
